@@ -1,5 +1,5 @@
 # Heart Disease Prediction using Machine Learning
-<div style="text-align: justify">
+
 The prevalence of heart disease is a significant contributor to mortality rates globally, and the early detection and prediction of heart disease can have a positive impact on patient outcomes. In this particular machine learning project, our objective is to predict the presence of heart disease in individuals by analyzing several features, including age, gender, blood pressure, cholesterol level, fasting blood sugar, electrocardiogram results, maximum heart rate achieved, exercise-induced angina, oldpeak, and ST segment slope. To achieve this, we utilized an open-source dataset sourced from Kaggle.
 
 This project was conducted in a structured manner, comprising five essential phases - exploratory data analysis (EDA), data preprocessing, model development, model evaluation, and deployment. During the EDA stage, our goal was to acquire a deeper understanding of the dataset, identify any trends, and visually analyze the relationships between different variables. The data preprocessing phase involved handling missing data, outliers, and categorical variables to improve the quality of the dataset.
@@ -7,4 +7,3 @@ This project was conducted in a structured manner, comprising five essential pha
 To develop a predictive model for heart disease, we tested multiple machine learning classification algorithms, including logistic regression, KNN Classifier, Naive Bayes, decision tree, and random forest. We trained these models on our dataset and evaluated their performance using various evaluation metrics like accuracy, precision, recall, and F1-score.
 
 After evaluating the performance of various machine learning classification algorithms, we selected the best-performing model and deployed it using Streamlit to make predictions on new data. The primary aim of this project is to create a valuable tool that healthcare professionals can use to predict heart disease in patients and take appropriate preventive measures. We believe that the results obtained from this project can help improve the accuracy and efficiency of heart disease diagnosis, ultimately leading to better patient care and outcomes.
-</div>
