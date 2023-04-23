@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-model = pickle.load(open('https://github.com/AryanGandotra/Heart-Disease-Prediction-using-Machine-Learning/blob/main/model.pkl', 'rb'))
+model = pickle.load(open('Heart-Disease-Prediction-using-Machine-Learning/blob/main/model.pkl', 'rb'))
 
 st.title('Heart Disease Predictor')
 
