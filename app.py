@@ -70,7 +70,7 @@ def predict():
       
     else:
 #         st.write('Based on the input features, you are likely to have heart disease.')
-        st.success('Based on the input features, you are likely to have heart disease.')
+        st.error('Based on the input features, you are likely to have heart disease.')
         
         
 submit = st.button('Submit', on_click=predict)
