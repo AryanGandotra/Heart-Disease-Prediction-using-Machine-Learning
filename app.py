@@ -48,28 +48,11 @@ def predict():
     input_features = np.array([[age, sex_val, chest_pain_type_val,
                               resting_bp, cholesterol, fasting_bs_val, resting_ecg_val, max_hr, exercise_angina_val, oldpeak, st_slope_val]])
     prediction = model.predict(input_features)
-
-#     st.write('Input features:')
-#     st.write(f'- Age: {age}')
-#     st.write(f'- Sex: {sex}')
-#     st.write(f'- Chest Pain Type: {chest_pain_type}')
-#     st.write(f'- Resting Blood Pressure (mm Hg): {resting_bp}')
-#     st.write(f'- Cholesterol (mg/dL): {cholesterol}')
-#     st.write(f'- Fasting Blood Sugar > 120 mg/dL: {fasting_bs}')
-#     st.write(f'- Resting Electrocardiographic Results: {resting_ecg}')
-#     st.write(f'- Maximum Heart Rate Achieved (bpm): {max_hr}')
-#     st.write(f'- Exercise-Induced Angina: {exercise_angina}')
-#     st.write(
-#         f'- ST Depression Induced by Exercise Relative to Rest: {oldpeak}')
-#     st.write(f'- ST Slope: {st_slope}')
-
-#     st.write('Prediction:')
+    
     if prediction[0] == 0:
-#         st.write('Based on the input features, you are not likely to have heart disease.')
          st.success('Based on the input features, you are not likely to have heart disease.')
       
     else:
-#         st.write('Based on the input features, you are likely to have heart disease.')
         st.error('Based on the input features, you are likely to have heart disease.')
         
         
