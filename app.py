@@ -26,7 +26,7 @@ oldpeak = st.slider(
 st_slope = st.selectbox(
     'ST Slope', ['Upsloping (UP)', 'Flat (FLAT)', 'Downsloping (DOWN)'])
 
-def predict:
+def predict():
     sex_map = {'Male': 1, 'Female': 0}
     chest_pain_type_map = {
         'Typical Angina (TA)': 0, 'Atypical Angina (ATA)': 1, 'Non-Anginal Pain (NAP)': 2, 'Asymptomatic (ASY)': 3}
