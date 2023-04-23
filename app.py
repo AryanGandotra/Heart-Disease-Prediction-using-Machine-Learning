@@ -26,10 +26,7 @@ oldpeak = st.slider(
 st_slope = st.selectbox(
     'ST Slope', ['Upsloping (UP)', 'Flat (FLAT)', 'Downsloping (DOWN)'])
 
-submit = st.button('Submit')
-
-
-if submit:
+def predict:
     sex_map = {'Male': 1, 'Female': 0}
     chest_pain_type_map = {
         'Typical Angina (TA)': 0, 'Atypical Angina (ATA)': 1, 'Non-Anginal Pain (NAP)': 2, 'Asymptomatic (ASY)': 3}
@@ -71,3 +68,6 @@ if submit:
             'Based on the input features, you are not likely to have heart disease.')
     else:
         st.write('Based on the input features, you are likely to have heart disease.')
+        
+        
+submit = st.button('Submit', on_click=predict)
